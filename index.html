@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zona Azul</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Registro Zona Azul</h1>
+    <form id="form">
+      <input type="hidden" id="id">
+      <label>Data: <input type="date" id="data" required></label>
+      <label>Horário: 
+        <input type="time" id="horario" step="600" required> <!-- step="600" para intervalos de 10 minutos -->
+      </label>
+      <label>Tipo de Pagamento:
+        <select id="tipo_pagamento" required>
+          <option value="pix">Pix</option>
+          <option value="dinheiro">Dinheiro</option>
+        </select>
+      </label>
+      <label>Placa do Carro: <input type="text" id="placa" required></label>
+      <button type="submit">Registrar</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
